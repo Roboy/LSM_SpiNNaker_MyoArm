@@ -53,8 +53,9 @@ add_message_files(
    FILES
 #   Message1.msg
 #   Message2.msg
-   myo_two_motor.msg
-   pop_list.msg
+   Myo_Two_Motor.msg
+   Pop_List.msg
+   Joint_Angle.msg
 )
 
 ## Generate services in the 'srv' folder
