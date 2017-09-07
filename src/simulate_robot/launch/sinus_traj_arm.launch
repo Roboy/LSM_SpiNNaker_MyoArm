@@ -1,0 +1,14 @@
+<!--	node: 	talker.py
+	model: 	simple_myo_robot_gazebo.urdf
+  -->
+
+<launch>
+  <param name="robot_description" textfile="$(find simulate_robot)/robot_models/simple_myo_robot_gazebo.urdf" />
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+    args="-param robot_description -urdf -model simple_myo_robot_gazebo" />
+  <rosparam file="$(find simulate_robot)/controllers.yaml" command="load"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner"
+    args="arm_controller"/>
+  <node name="talker" pkg="simulate_robot" type="talker.py" cwd="node"/>
+</launch>

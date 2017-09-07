@@ -1,0 +1,9 @@
+<provenance_data_items name="0_0_1_LiveSpikeReceiver:0:0">
+  <provenance_data_item name="Times_the_transmission_of_spikes_overran">0</provenance_data_item>
+  <provenance_data_item name="Times_the_callback_queue_was_overloaded">0</provenance_data_item>
+  <provenance_data_item name="Times_the_dma_queue_was_overloaded">0</provenance_data_item>
+  <provenance_data_item name="Times_the_timer_tic_over_ran">0</provenance_data_item>
+  <provenance_data_item name="max_number_of_times_timer_tic_over_ran">0</provenance_data_item>
+  <provenance_data_item name="lost_packets_without_payload">0</provenance_data_item>
+  <provenance_data_item name="lost_packets_with_payload">0</provenance_data_item>
+</provenance_data_items>

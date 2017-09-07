@@ -1,0 +1,9 @@
+[console_scripts]
+rig-boot = rig.scripts.rig_boot:main
+rig-counters = rig.scripts.rig_counters:main
+rig-discover = rig.scripts.rig_discover:main
+rig-info = rig.scripts.rig_info:main
+rig-iobuf = rig.scripts.rig_iobuf:main
+rig-power = rig.scripts.rig_power:main
+rig-ps = rig.scripts.rig_ps:main
+

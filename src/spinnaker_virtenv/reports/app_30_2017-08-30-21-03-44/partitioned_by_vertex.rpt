@@ -1,0 +1,31 @@
+        Placement Information by Vertex
+        ===============================
+
+Generated: Wed Aug 30 21:03:44 2017 for target machine '192.168.240.36'
+
+**** Vertex: 'Excitatory_Cells'
+Model: IFCondExp
+Pop size: 400
+Machine Vertices: 
+  Slice 0:49 (50 atoms) 
+  Slice 50:99 (50 atoms) 
+  Slice 100:149 (50 atoms) 
+  Slice 150:199 (50 atoms) 
+  Slice 200:249 (50 atoms) 
+  Slice 250:299 (50 atoms) 
+  Slice 300:349 (50 atoms) 
+  Slice 350:399 (50 atoms) 
+
+**** Vertex: 'Inhibitory_Cells'
+Model: IFCondExp
+Pop size: 100
+Machine Vertices: 
+  Slice 0:49 (50 atoms) 
+  Slice 50:99 (50 atoms) 
+
+**** Vertex: 'expoisson'
+Model: SpikeSourcePoisson
+Pop size: 20
+Machine Vertices: 
+  Slice 0:19 (20 atoms) 
+

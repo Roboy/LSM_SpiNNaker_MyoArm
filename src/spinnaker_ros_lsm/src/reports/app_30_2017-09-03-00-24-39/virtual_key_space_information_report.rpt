@@ -1,0 +1,8 @@
+Vertex: readout_neurons:0:1 
+edge:SimpleMachineEdge(pre_vertex=readout_neurons:0:1, post_vertex=LiveSpikeReceiver:0:0, traffic_type=EdgeTrafficType.MULTICAST, label=None, traffic_weight=1), keys_and_masks:[KeyAndMask:0x2L:0xfffffffe] 
+
+
+Vertex: <spinn_front_end_common.utility_models.reverse_ip_tag_multicast_source_machine_vertex.ReverseIPTagMulticastSourceMachineVertex object at 0x7ff505b1d290> 
+edge:<spinn_front_end_common.utility_models.reverse_ip_tag_multicast_source_machine_vertex.ReverseIPTagMulticastSourceMachineVertex object at 0x7ff505b1d290>:readout_neurons:0:1, keys_and_masks:[KeyAndMask:0x0L:0xffffffff] 
+
+

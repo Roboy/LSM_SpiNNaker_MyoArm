@@ -1,0 +1,9 @@
+bursting liquid:
+	res_pconn = 0.01      # sparse connection probability
+	input_pconn= 0.2
+	w_exc = 20.   # later add unit
+	w_inh = -51.   # later add unit
+	w_input = 70.
+	delay_exc = 1      # defines how long (ms) the synapse takes for transmission
+	delay_inh = 1
+

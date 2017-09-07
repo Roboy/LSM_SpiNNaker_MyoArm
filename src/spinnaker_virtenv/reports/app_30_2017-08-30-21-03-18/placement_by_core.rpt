@@ -1,0 +1,62 @@
+        Placement Information by Core
+        =============================
+
+Generated: Wed Aug 30 21:03:19 2017 for target machine '192.168.240.36'
+
+**** Chip: (0, 0)
+Application cores: 18
+  Processor 1: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 0:49 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 2: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 50:99 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 3: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 100:149 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 4: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 150:199 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 5: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 200:249 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 6: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 250:299 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 7: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 300:349 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 8: Vertex: 'Excitatory_Cells', pop size: 400
+              Slice on this core: 350:399 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 9: Vertex: 'Inhibitory_Cells', pop size: 100
+              Slice on this core: 0:49 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 10: Vertex: 'Inhibitory_Cells', pop size: 100
+              Slice on this core: 50:99 (50 atoms)
+              Model: IFCondExp
+
+
+  Processor 11: Vertex: 'expoisson', pop size: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourcePoisson
+
+

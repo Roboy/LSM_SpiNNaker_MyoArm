@@ -1,0 +1,1 @@
+IP Tag on 192.168.240.36: tag=1 port=17896 ip_address=0.0.0.0 strip_sdp=TrueIP Tag on 192.168.240.36: tag=0 port=17895 ip_address=0.0.0.0 strip_sdp=TrueReverse IP Tag on 192.168.240.36: tag=2 port=12345 x=0 y=0 p=3, s_pt=1

@@ -1,0 +1,47 @@
+        Placement Information by Core
+        =============================
+
+Generated: Thu Jun 22 13:08:20 2017 for target machine '192.168.240.36'
+
+**** Chip: (0, 0)
+Application cores: 18
+  Processor 1: Vertex: 'pop_1', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 2: Vertex: 'input', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 3: Vertex: 'pop_1', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 4: Vertex: 'input', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 5: Vertex: 'pop_1', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 6: Vertex: 'input', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 7: Vertex: 'pop_1', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 8: Vertex: 'input', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: SpikeSourceArray
+
+

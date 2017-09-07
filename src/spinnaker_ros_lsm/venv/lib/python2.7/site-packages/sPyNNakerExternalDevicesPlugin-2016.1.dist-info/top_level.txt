@@ -1,0 +1,1 @@
+spynnaker_external_devices_plugin

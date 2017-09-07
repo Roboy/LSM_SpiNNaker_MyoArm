@@ -1,0 +1,18 @@
+        Network Specification
+ =====================
+
+Generated: Thu Jun 22 13:09:46 2017 for target machine '192.168.240.36'
+
+*** Vertices:
+Vertex pop_1, size: 1
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=255)
+
+Vertex input, size: 1
+Model: SpikeSourceArray
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+*** Edges:
+Edge Projection 0 from vertex: 'input' (1 atoms) to vertex: 'pop_1' (1 atoms)
+  Model: No Model
+
