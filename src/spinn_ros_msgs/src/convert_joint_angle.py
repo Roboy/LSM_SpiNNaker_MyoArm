@@ -19,7 +19,7 @@ def convert_angle():
     uint8[] agcGain
     bool[] tooFar
     bool[] tooClose
-    '''
+    '''    
 
     '''
     #topic: /roboy/middleware/JointAngle
@@ -40,12 +40,15 @@ def convert_angle():
 
 
 def joint_callback(data):
+    '''
+    Converts the received encoder value from the joint sensor into degrees and radians and publishes it as a Joint_Angle message
+    '''
 
     joint_angle = Joint_Angle()
     encoder_value = data.absAngles[0]
     joint_angle.encoder = encoder_value
-    joint_angle.degree = int(float(encoder_value)/4096*360-180)     # decode to degree and center around 0
-    joint_angle.radian = float(encoder_value)/4096*np.pi - np.pi/2  # decode to radian and center around 0
+    joint_angle.degree = int(float(encoder_value)/4096*360-230)     # decode to degree and center around 0
+    joint_angle.radian = float(joint_angle.degree)/360*2*np.pi        # decode to radian and center around 0
         
     pub = rospy.Publisher('/roboy/middleware/JointAngle', Joint_Angle, queue_size=10)
     pub.publish(joint_angle)
