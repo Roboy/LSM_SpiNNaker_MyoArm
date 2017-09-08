@@ -1,2 +1,1 @@
-uint8[] motors
-int32[] setPoints
+float32[] neuron_pop

@@ -53,7 +53,7 @@ add_message_files(
    FILES
 #   Message1.msg
 #   Message2.msg
-   Myo_Two_Motor.msg
+   Myo_Two_Motors.msg
    Pop_List.msg
    Joint_Angle.msg
 )

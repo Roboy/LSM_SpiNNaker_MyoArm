@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
+'''
+@author	Nicolas Berberich
+@date	07.09.2017
+
+ROS node for converting joint sensor encoder values to degrees and radians.
+'''
+
 
 import rospy
 from std_msgs.msg import String
@@ -27,11 +34,10 @@ def convert_angle():
     int32 encoder
     int32 degree
     float32 radian
-
     '''
+
     rospy.init_node('convert_joint_angle', anonymous=True)
 
-    
     rospy.Subscriber("/roboy/middleware/JointStatus", JointStatus, joint_callback)
     
     rate = rospy.Rate(10) # 10hz
