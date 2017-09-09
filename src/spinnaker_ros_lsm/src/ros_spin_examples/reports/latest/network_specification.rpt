@@ -1,7 +1,7 @@
         Network Specification
  =====================
 
-Generated: Sat Sep  2 01:14:59 2017 for target machine '192.168.240.36'
+Generated: Fri Sep  8 21:49:47 2017 for target machine '192.168.240.36'
 
 *** Vertices:
 Vertex pop, size: 1
@@ -14,8 +14,8 @@ constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
 
 Vertex LiveSpikeReceiver, size: 1
 Model: LivePacketGather
-constraint: PartitionerMaximumSizeConstraint(size=1)
 constraint: PlacerRadialPlacementFromChipConstraint(x=0, y=0)
+constraint: PartitionerMaximumSizeConstraint(size=1)
 
 *** Edges:
 Edge Projection 0 from vertex: 'injector0' (1 atoms) to vertex: 'pop' (1 atoms)

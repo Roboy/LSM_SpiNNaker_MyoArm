@@ -1,37 +1,26 @@
         Network Specification
  =====================
 
-Generated: Fri Sep  8 21:38:56 2017 for target machine '192.168.240.36'
+Generated: Sat Sep  9 02:55:17 2017 for target machine '192.168.240.36'
 
 *** Vertices:
-Vertex Excitatory_Cells, size: 400
-Model: IFCondExp
-constraint: PartitionerMaximumSizeConstraint(size=50)
+Vertex readout_neurons, size: 3
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=255)
 
-Vertex Inhibitory_Cells, size: 100
-Model: IFCondExp
-constraint: PartitionerMaximumSizeConstraint(size=50)
+Vertex injector0, size: 1
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
 
-Vertex expoisson, size: 20
-Model: SpikeSourcePoisson
-constraint: PartitionerMaximumSizeConstraint(size=500)
+Vertex LiveSpikeReceiver, size: 1
+Model: LivePacketGather
+constraint: PlacerRadialPlacementFromChipConstraint(x=0, y=0)
+constraint: PartitionerMaximumSizeConstraint(size=1)
 
 *** Edges:
-Edge Projection 0 from vertex: 'Excitatory_Cells' (400 atoms) to vertex: 'Excitatory_Cells' (400 atoms)
+Edge Projection 0 from vertex: 'injector0' (1 atoms) to vertex: 'readout_neurons' (3 atoms)
   Model: No Model
 
-Edge Projection 1 from vertex: 'Excitatory_Cells' (400 atoms) to vertex: 'Inhibitory_Cells' (100 atoms)
-  Model: No Model
-
-Edge Projection 4 from vertex: 'expoisson' (20 atoms) to vertex: 'Excitatory_Cells' (400 atoms)
-  Model: No Model
-
-Edge Projection 5 from vertex: 'expoisson' (20 atoms) to vertex: 'Inhibitory_Cells' (100 atoms)
-  Model: No Model
-
-Edge Projection 2 from vertex: 'Inhibitory_Cells' (100 atoms) to vertex: 'Excitatory_Cells' (400 atoms)
-  Model: No Model
-
-Edge Projection 3 from vertex: 'Inhibitory_Cells' (100 atoms) to vertex: 'Inhibitory_Cells' (100 atoms)
+Edge recorder_edge from vertex: 'readout_neurons' (3 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
   Model: No Model
 

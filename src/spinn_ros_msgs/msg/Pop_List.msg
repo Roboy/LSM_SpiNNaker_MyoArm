@@ -1,1 +1,1 @@
-float32[] neuron_pop
+int32[] neuron_pop

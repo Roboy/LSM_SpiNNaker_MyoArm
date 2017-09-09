@@ -1,31 +1,23 @@
         Placement Information by Vertex
         ===============================
 
-Generated: Fri Sep  8 21:38:56 2017 for target machine '192.168.240.36'
+Generated: Sat Sep  9 02:55:17 2017 for target machine '192.168.240.36'
 
-**** Vertex: 'Excitatory_Cells'
-Model: IFCondExp
-Pop size: 400
+**** Vertex: 'LiveSpikeReceiver'
+Model: LivePacketGather
+Pop size: 1
 Machine Vertices: 
-  Slice 0:49 (50 atoms) on core (0, 0, 1) 
-  Slice 50:99 (50 atoms) on core (0, 0, 2) 
-  Slice 100:149 (50 atoms) on core (0, 0, 3) 
-  Slice 150:199 (50 atoms) on core (0, 0, 4) 
-  Slice 200:249 (50 atoms) on core (0, 0, 5) 
-  Slice 250:299 (50 atoms) on core (0, 0, 6) 
-  Slice 300:349 (50 atoms) on core (0, 0, 7) 
-  Slice 350:399 (50 atoms) on core (0, 0, 8) 
+  Slice 0:0 (1 atoms) on core (0, 0, 1) 
 
-**** Vertex: 'Inhibitory_Cells'
-Model: IFCondExp
-Pop size: 100
+**** Vertex: 'injector0'
+Model: SpikeInjector
+Pop size: 1
 Machine Vertices: 
-  Slice 0:49 (50 atoms) on core (0, 0, 9) 
-  Slice 50:99 (50 atoms) on core (0, 0, 10) 
+  Slice 0:0 (1 atoms) on core (0, 0, 3) 
 
-**** Vertex: 'expoisson'
-Model: SpikeSourcePoisson
-Pop size: 20
+**** Vertex: 'readout_neurons'
+Model: IFCurrExp
+Pop size: 3
 Machine Vertices: 
-  Slice 0:19 (20 atoms) on core (0, 0, 11) 
+  Slice 0:2 (3 atoms) on core (0, 0, 2) 
 
