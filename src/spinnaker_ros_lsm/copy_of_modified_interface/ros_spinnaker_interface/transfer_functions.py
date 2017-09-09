@@ -264,19 +264,40 @@ class SpikeSinkConvolutionMultipleChannels(BasicSpikeSink):
         self.ros_values.append(new_ros_value)
         return new_ros_value
 
-class SpikeSinkMultipleReadoutsConvolution(BasicSpikeSink)
-    f = lambda x: x*np.exp(2-x)
+class SpikeSinkMultipleReadoutsConvolution(BasicSpikeSink):
+    global f
+    #f = lambda x: x*np.exp(2-x)
+    f = lambda x: x/20*np.exp(2-x/20)
     conv_filter = [f(i) for i in np.arange(0, 6, 0.1)] # last 60 spikes
-    last_spike_times = np.zeros((60,))
+    global last_spike_times
+    last_spike_times = np.ones((10,)) # do this as self?
+    global last_rate
+    last_rate=0
 
     def on_spike(self, spike_time, neuron_id, curr_ros_value):
         # 
-
+        global last_rate
+        global last_spike_times
         # update the list of last spike_times by replacing the oldest spike_time and resort
         last_spike_times[np.where(last_spike_times.min())] = spike_time
         last_spike_times.sort()
 
+        # weight with conv_filter based on time
+        spike_rate = 0
+        for i in last_spike_times:
+            time_weighted=int(last_spike_times.max()-i)
+            spike_rate += f(time_weighted)
+            
+        # divide through the number of spike (or time difference between 1st and last spike?)
+
+        new_ros_value = int(spike_rate) # problem is that the result is to small and gets rounded to 0
+        #print(new_ros_value)
+        last_rate =new_ros_value
+        return new_ros_value
+
+
     def on_update(self, neurons, sim_time, curr_ros_value):
+        return last_rate
 
 
 if __name__ == "__main__":

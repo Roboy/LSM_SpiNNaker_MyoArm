@@ -19,7 +19,7 @@ import spynnaker.pyNN as pynn
 from ros_spinnaker_interface import ROS_Spinnaker_Interface
 # import transfer_functions as tf
 from ros_spinnaker_interface import SpikeSourcePoisson
-from ros_spinnaker_interface import SpikeSinkSmoothing, SpikeSinkConvolutionMultipleChannels
+from ros_spinnaker_interface import SpikeSinkSmoothing, SpikeSinkMultipleReadoutsConvolution
 
 
 ts = 0.1				 # simulation timestep in ms
@@ -42,7 +42,7 @@ readout_neurons = pynn.Population(size=n_readout_neurons, cellclass=pynn.IF_curr
 ros_interface = ROS_Spinnaker_Interface(
         n_neurons_source=n_input_neurons,                 # number of neurons of the injector population
         Spike_Source_Class=SpikeSourcePoisson,   # the transfer function ROS Input -> Spikes you want to use.
-        Spike_Sink_Class=SpikeSinkConvolutionMultipleChannels,     # the transfer function Spikes -> ROS Output you want to use.
+        Spike_Sink_Class=SpikeSinkMultipleReadoutsConvolution,     # the transfer function Spikes -> ROS Output you want to use.
                                                     # You can choose from the transfer_functions module
                                                     # or write one yourself.
         output_population=readout_neurons,          # the pynn population you wish to receive the

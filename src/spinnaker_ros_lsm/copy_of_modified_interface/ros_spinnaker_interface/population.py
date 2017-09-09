@@ -88,10 +88,12 @@ class BasicSpikeSink(object):
     """
     Please inherit from this class and implement the on_spike and on_update methods.
     """
+    
 
     def __init__(self, n_neurons, queue, timestep):
         self._n_neurons = n_neurons
         self._q = queue
+
 
         if n_neurons >1:
             self._ros_value = np.zeros((self._n_neurons,))
@@ -132,6 +134,9 @@ class BasicSpikeSink(object):
         
         Called with normal rate.
         """
+        global new_ros_value
+        
+
         if self._readout_pop_flag:
 
             if not self._q.empty():
@@ -142,18 +147,26 @@ class BasicSpikeSink(object):
                 
                 new_ros_value = np.zeros((self._n_neurons,))
                 new_ros_value[neuron_id] = self.on_spike(spike_time, neuron_id, self._ros_value)
+                
+                new_ros_value= new_ros_value.astype(int)
+                print(new_ros_value)
                 self._ros_value = new_ros_value if new_ros_value is not None else self._ros_value
         
+                '''
             self._call_counter += 1
 
             if self._call_counter >= self.on_update_calling_rate:
                 self._call_counter = 0
 
                 # Call on_update with a specific rate
+                
                 sim_time = int((time.time() - self._sim_start) * 1000)  # ms
                 new_ros_value = self.on_update(self._neurons, sim_time, self._ros_value)
+                new_ros_value= new_ros_value.astype(int)
                 self._ros_value = new_ros_value if new_ros_value is not None else self._ros_value
-
+                
+                self._ros_value = new_ros_value
+                '''
 
         else: 
             if not self._q.empty():
