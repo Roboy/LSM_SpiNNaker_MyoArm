@@ -25,7 +25,7 @@ from ros_spinnaker_interface import SpikeSinkSmoothing, SpikeSinkMultipleReadout
 ts = 0.1				 # simulation timestep in ms
 simulation_time = 2000  # ms
 
-n_input_neurons   = 1
+n_input_neurons   = 2
 n_readout_neurons = 3	 # 
 
 
@@ -54,7 +54,7 @@ ros_interface = ROS_Spinnaker_Interface(
 
 
 # Build your network, run the simulation and optionally record the spikes and voltages.
-pynn.Projection(ros_interface, readout_neurons, pynn.OneToOneConnector(weights=5, delays=1))
+pynn.Projection(ros_interface, readout_neurons, pynn.AllToAllConnector(weights=5, delays=1))
 
 
 readout_neurons.record()

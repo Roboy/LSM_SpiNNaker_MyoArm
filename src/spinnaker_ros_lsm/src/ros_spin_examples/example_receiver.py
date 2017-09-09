@@ -17,8 +17,8 @@ from ros_spinnaker_interface import SpikeSinkSmoothing
 
 
 ts = 0.1
-n_neurons = 1
-simulation_time = 10000  # ms
+n_neurons = 2
+simulation_time = 2000  # ms
 
 
 pynn.setup(timestep=ts, min_delay=ts, max_delay=2.0*ts)

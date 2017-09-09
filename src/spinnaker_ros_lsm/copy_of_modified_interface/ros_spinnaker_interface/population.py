@@ -146,10 +146,11 @@ class BasicSpikeSink(object):
                 self._neurons[neuron_id].spike_times.append(spike_time)
                 
                 new_ros_value = np.zeros((self._n_neurons,))
-                new_ros_value[neuron_id] = self.on_spike(spike_time, neuron_id, self._ros_value)
+                print(neuron_id)
+                new_ros_value[neuron_id] = self.on_spike(spike_time, neuron_id, self._ros_value, self._n_neurons)
                 
                 new_ros_value= new_ros_value.astype(int)
-                print(new_ros_value)
+                #print(new_ros_value)
                 self._ros_value = new_ros_value if new_ros_value is not None else self._ros_value
         
                 '''
@@ -195,7 +196,7 @@ class BasicSpikeSink(object):
         else:
             return int(self._ros_value)
 
-    def on_spike(self, spike_time, neuron_id, curr_ros_value):
+    def on_spike(self, spike_time, neuron_id, curr_ros_value, n_neurons):
         raise NotImplementedError("Please implement on_spike(...) in a subclass to build your own spike sink " + \
                                   "or choose a spike sink from the transfer_functions module.")
 

@@ -155,7 +155,7 @@ class SpikeSinkSpikesPerWindow(BasicSpikeSink):
     Return the number of spikes in the last x ms.
     """
 
-    def on_spike(self, spike_time, neuron_id, curr_ros_value):
+    def on_spike(self, spike_time, neuron_id, curr_ros_value, n_neurons):
         pass
 
     def on_update(self, neurons, sim_time, curr_ros_value):
@@ -178,7 +178,7 @@ class SpikeSinkSmoothing(BasicSpikeSink):
     ros_values = []
     
 
-    def on_spike(self, spike_time, neuron_id, curr_ros_value):
+    def on_spike(self, spike_time, neuron_id, curr_ros_value, n_neurons):
         new_ros_value = curr_ros_value + 10
         self.ros_values.append(new_ros_value)
         return new_ros_value
@@ -209,7 +209,7 @@ class SpikeSinkConvolution(BasicSpikeSink):
     output = [1 for i in range(len(spike_response))]
     ros_values = []
 
-    def on_spike(self, spike_time, neuron_id, curr_ros_value):
+    def on_spike(self, spike_time, neuron_id, curr_ros_value, n_neurons):
         self.output = np.convolve(self.output, self.spike_response, 'same')
 
     def on_update(self, neurons, sim_time, curr_ros_value):
@@ -251,7 +251,7 @@ class SpikeSinkConvolutionMultipleChannels(BasicSpikeSink):
     output = [[1 for i in range(len(spike_response))] for n in range(10)]  # TODO get n_neurons dynamically
     ros_values = []
 
-    def on_spike(self, spike_time, neuron_id, curr_ros_value):
+    def on_spike(self, spike_time, neuron_id, curr_ros_value, n_neurons):
         self.output[neuron_id] = np.convolve(self.output, self.spike_response, 'same')
 
 
@@ -269,18 +269,38 @@ class SpikeSinkMultipleReadoutsConvolution(BasicSpikeSink):
     #f = lambda x: x*np.exp(2-x)
     f = lambda x: x/20*np.exp(2-x/20)
     conv_filter = [f(i) for i in np.arange(0, 6, 0.1)] # last 60 spikes
-    global last_spike_times
-    last_spike_times = np.ones((10,)) # do this as self?
+
+    #global last_spike_times
+    #last_spike_times = np.ones((10,)) # do this as self?
     global last_rate
     last_rate=0
+    global init_flag
+    init_flag = True
+    global pop_last_spike_times
 
-    def on_spike(self, spike_time, neuron_id, curr_ros_value):
+    def on_spike(self, spike_time, neuron_id, curr_ros_value, n_neurons):
         # 
+        #print(neuron_id)
+        global pop_last_spike_times
+        global init_flag
+        if init_flag:
+            pop_last_spike_times=np.ones((n_neurons,10))
+            init_flag=False
+
         global last_rate
-        global last_spike_times
-        # update the list of last spike_times by replacing the oldest spike_time and resort
+        #global last_spike_times
+
+        # get the spike history of the spiking neuron
+        if pop_last_spike_times is None:
+            pop_last_spike_times=np.ones((n_neurons,10))
+
+        last_spike_times=pop_last_spike_times[neuron_id]
+
+        # update the list of last spike_times by replacing the oldest spike_time and resort (FIFO queue)
         last_spike_times[np.where(last_spike_times.min())] = spike_time
         last_spike_times.sort()
+
+        pop_last_spike_times[neuron_id]=last_spike_times
 
         # weight with conv_filter based on time
         spike_rate = 0

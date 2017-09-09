@@ -1,0 +1,22 @@
+        Placement Information by Core
+        =============================
+
+Generated: Sat Sep  9 05:37:46 2017 for target machine '192.168.240.36'
+
+**** Chip: (0, 0)
+Application cores: 18
+  Processor 1: Vertex: 'LiveSpikeReceiver', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: LivePacketGather
+
+
+  Processor 2: Vertex: 'readout_neurons', pop size: 3
+              Slice on this core: 0:2 (3 atoms)
+              Model: IFCurrExp
+
+
+  Processor 3: Vertex: 'injector0', pop size: 2
+              Slice on this core: 0:1 (2 atoms)
+              Model: SpikeInjector
+
+

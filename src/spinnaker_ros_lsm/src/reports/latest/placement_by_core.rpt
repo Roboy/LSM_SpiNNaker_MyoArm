@@ -1,7 +1,7 @@
         Placement Information by Core
         =============================
 
-Generated: Sat Sep  9 04:37:45 2017 for target machine '192.168.240.36'
+Generated: Sat Sep  9 06:01:57 2017 for target machine '192.168.240.36'
 
 **** Chip: (0, 0)
 Application cores: 18
@@ -15,8 +15,8 @@ Application cores: 18
               Model: IFCurrExp
 
 
-  Processor 3: Vertex: 'injector0', pop size: 1
-              Slice on this core: 0:0 (1 atoms)
+  Processor 3: Vertex: 'injector0', pop size: 2
+              Slice on this core: 0:1 (2 atoms)
               Model: SpikeInjector
 
 
