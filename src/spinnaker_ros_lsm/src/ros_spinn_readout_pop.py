@@ -5,6 +5,13 @@
 @author Nicolas Berberich
 @date 	02.09.2017
 
+Simple network to show that multiple readout neurons are supported. 
+Requires:
+        rostopic pub /to_spinner std_msgs/Int64 '{data: 10}'
+See readout spike rates:
+        rostopic echo /from_spinnaker 
+
+
 This script takes the ROS-messages from the rostopic /to_spinnaker and sends them to the input neuron
 population. This input population is then connected to the reservoir of the Liquid State Machine which 
 itself is connected to the two readout neurons. The spikes occuring in the readout neurons are then send 

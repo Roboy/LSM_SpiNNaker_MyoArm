@@ -1,13 +1,7 @@
         Placement Information by Vertex
         ===============================
 
-Generated: Sun Sep 10 06:03:59 2017 for target machine '192.168.240.36'
-
-**** Vertex: 'Excitatory_Cells'
-Model: IzkCondExp
-Pop size: 48
-Machine Vertices: 
-  Slice 0:47 (48 atoms) 
+Generated: Sun Sep 10 06:17:13 2017 for target machine '192.168.240.36'
 
 **** Vertex: 'Excitatory_Cells'
 Model: IFCurrExp
@@ -16,22 +10,10 @@ Machine Vertices:
   Slice 0:47 (48 atoms) 
 
 **** Vertex: 'Inhibitory_Cells'
-Model: IzkCondExp
-Pop size: 11
-Machine Vertices: 
-  Slice 0:10 (11 atoms) 
-
-**** Vertex: 'Inhibitory_Cells'
 Model: IFCurrExp
 Pop size: 11
 Machine Vertices: 
   Slice 0:10 (11 atoms) 
-
-**** Vertex: 'LiveSpikeReceiver'
-Model: LivePacketGather
-Pop size: 1
-Machine Vertices: 
-  Slice 0:0 (1 atoms) 
 
 **** Vertex: 'LiveSpikeReceiver'
 Model: LivePacketGather
@@ -50,24 +32,6 @@ Model: SpikeInjector
 Pop size: 1
 Machine Vertices: 
   Slice 0:0 (1 atoms) 
-
-**** Vertex: 'injector2'
-Model: SpikeInjector
-Pop size: 4
-Machine Vertices: 
-  Slice 0:3 (4 atoms) 
-
-**** Vertex: 'injector3'
-Model: SpikeInjector
-Pop size: 1
-Machine Vertices: 
-  Slice 0:0 (1 atoms) 
-
-**** Vertex: 'readout_neurons'
-Model: IFCurrExp
-Pop size: 2
-Machine Vertices: 
-  Slice 0:1 (2 atoms) 
 
 **** Vertex: 'readout_neurons'
 Model: IFCurrExp

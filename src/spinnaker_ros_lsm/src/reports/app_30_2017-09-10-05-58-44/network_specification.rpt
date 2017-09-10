@@ -1,0 +1,177 @@
+        Network Specification
+ =====================
+
+Generated: Sun Sep 10 06:16:06 2017 for target machine '192.168.240.36'
+
+*** Vertices:
+Vertex Excitatory_Cells, size: 48
+Model: IzkCondExp
+constraint: PartitionerMaximumSizeConstraint(size=255)
+
+Vertex Inhibitory_Cells, size: 11
+Model: IzkCondExp
+constraint: PartitionerMaximumSizeConstraint(size=255)
+
+Vertex injector0, size: 4
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex readout_neurons, size: 2
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex injector1, size: 1
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex LiveSpikeReceiver, size: 1
+Model: LivePacketGather
+constraint: PlacerRadialPlacementFromChipConstraint(x=0, y=0)
+constraint: PartitionerMaximumSizeConstraint(size=1)
+
+Vertex Excitatory_Cells, size: 48
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex Inhibitory_Cells, size: 11
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex injector2, size: 4
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex readout_neurons, size: 2
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex injector3, size: 1
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex LiveSpikeReceiver, size: 1
+Model: LivePacketGather
+constraint: PlacerRadialPlacementFromChipConstraint(x=0, y=0)
+constraint: PartitionerMaximumSizeConstraint(size=1)
+
+Vertex injector4, size: 4
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex readout_neurons, size: 2
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex injector5, size: 1
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex LiveSpikeReceiver, size: 1
+Model: LivePacketGather
+constraint: PartitionerMaximumSizeConstraint(size=1)
+constraint: PlacerRadialPlacementFromChipConstraint(x=0, y=0)
+
+Vertex Excitatory_Cells, size: 48
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex Inhibitory_Cells, size: 11
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex injector6, size: 4
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex readout_neurons, size: 2
+Model: IFCurrExp
+constraint: PartitionerMaximumSizeConstraint(size=100)
+
+Vertex injector7, size: 1
+Model: SpikeInjector
+constraint: PartitionerMaximumSizeConstraint(size=9223372036854775807)
+
+Vertex LiveSpikeReceiver, size: 1
+Model: LivePacketGather
+constraint: PlacerRadialPlacementFromChipConstraint(x=0, y=0)
+constraint: PartitionerMaximumSizeConstraint(size=1)
+
+*** Edges:
+Edge recorder_edge from vertex: 'readout_neurons' (2 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+
+Edge Projection 4 from vertex: 'Inhibitory_Cells' (11 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 5 from vertex: 'Inhibitory_Cells' (11 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+
+Edge Projection 24 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 25 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+
+Edge Projection 28 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'readout_neurons' (2 atoms)
+  Model: No Model
+
+Edge Projection 23 from vertex: 'injector6' (4 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 16 from vertex: 'injector4' (4 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'readout_neurons' (2 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+
+Edge Projection 12 from vertex: 'Inhibitory_Cells' (11 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 13 from vertex: 'Inhibitory_Cells' (11 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'readout_neurons' (2 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+
+Edge Projection 2 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 3 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+
+Edge Projection 6 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'readout_neurons' (2 atoms)
+  Model: No Model
+
+Edge Projection 10 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 11 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+
+Edge Projection 14 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'readout_neurons' (2 atoms)
+  Model: No Model
+
+Edge Projection 21 from vertex: 'Excitatory_Cells' (48 atoms) to vertex: 'readout_neurons' (2 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'readout_neurons' (2 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+
+Edge Projection 0 from vertex: 'injector0' (4 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 1 from vertex: 'injector0' (4 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+
+Edge Projection 26 from vertex: 'Inhibitory_Cells' (11 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 27 from vertex: 'Inhibitory_Cells' (11 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+
+Edge Projection 8 from vertex: 'injector2' (4 atoms) to vertex: 'Excitatory_Cells' (48 atoms)
+  Model: No Model
+
+Edge Projection 9 from vertex: 'injector2' (4 atoms) to vertex: 'Inhibitory_Cells' (11 atoms)
+  Model: No Model
+

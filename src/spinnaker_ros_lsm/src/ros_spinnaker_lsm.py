@@ -6,9 +6,7 @@
 @date 	10.09.2017
 
 
-Simple version of a Liquid State Machine with 
-    - only excitatory neurons in reservoir
-    - only AllToAllConnectors
+
 
 
 Credits to Stephan Reith for developing the ROS-SpiNNaker interface
@@ -105,7 +103,6 @@ ext_conn = FixedProbabilityConnector(rconn, weights=0.1)
 
 pynn.Projection(input_interface, reservoir, pynn.AllToAllConnector(weights=0.5, delays=1))
 
-pynn.IZ
 
 
 pynn.Projection(reservoir, readout_neurons, pynn.AllToAllConnector(weights=0.5, delays=1))
