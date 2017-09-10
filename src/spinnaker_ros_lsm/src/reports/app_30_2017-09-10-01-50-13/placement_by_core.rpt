@@ -1,0 +1,333 @@
+        Placement Information by Core
+        =============================
+
+Generated: Sun Sep 10 01:50:14 2017 for target machine '192.168.240.36'
+
+**** Chip: (0, 0)
+Application cores: 18
+  Processor 1: Vertex: 'LiveSpikeReceiver', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: LivePacketGather
+
+
+  Processor 2: Vertex: 'readout_neurons', pop size: 2
+              Slice on this core: 1:1 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 3: Vertex: 'readout_neurons', pop size: 2
+              Slice on this core: 0:0 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 4: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 0:0 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 5: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 1:1 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 6: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 2:2 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 7: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 3:3 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 8: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 4:4 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 9: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 5:5 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 10: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 6:6 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 11: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 7:7 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 12: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 8:8 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 13: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 9:9 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 14: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 10:10 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 15: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 11:11 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 16: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 12:12 (1 atoms)
+              Model: IFCurrExp
+
+
+**** Chip: (0, 1)
+Application cores: 18
+  Processor 1: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 45:45 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 2: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 46:46 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 3: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 47:47 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 4: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 48:48 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 5: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 49:49 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 6: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 50:50 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 7: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 51:51 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 8: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 52:52 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 9: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 53:53 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 10: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 54:54 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 11: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 55:55 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 12: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 56:56 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 13: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 57:57 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 14: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 58:58 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 15: Vertex: 'injector0', pop size: 4
+              Slice on this core: 0:3 (4 atoms)
+              Model: SpikeInjector
+
+
+  Processor 16: Vertex: 'injector1', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: SpikeInjector
+
+
+**** Chip: (1, 0)
+Application cores: 18
+  Processor 1: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 13:13 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 2: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 14:14 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 3: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 15:15 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 4: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 16:16 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 5: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 17:17 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 6: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 18:18 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 7: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 19:19 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 8: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 20:20 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 9: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 21:21 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 10: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 22:22 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 11: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 23:23 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 12: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 24:24 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 13: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 25:25 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 14: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 26:26 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 15: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 27:27 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 16: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 28:28 (1 atoms)
+              Model: IFCurrExp
+
+
+**** Chip: (1, 1)
+Application cores: 18
+  Processor 1: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 29:29 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 2: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 30:30 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 3: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 31:31 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 4: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 32:32 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 5: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 33:33 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 6: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 34:34 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 7: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 35:35 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 8: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 36:36 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 9: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 37:37 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 10: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 38:38 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 11: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 39:39 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 12: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 40:40 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 13: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 41:41 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 14: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 42:42 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 15: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 43:43 (1 atoms)
+              Model: IFCurrExp
+
+
+  Processor 16: Vertex: 'readout_neurons', pop size: 59
+              Slice on this core: 44:44 (1 atoms)
+              Model: IFCurrExp
+
+

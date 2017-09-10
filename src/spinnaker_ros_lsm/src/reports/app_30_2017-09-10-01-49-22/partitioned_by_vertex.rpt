@@ -1,0 +1,94 @@
+        Placement Information by Vertex
+        ===============================
+
+Generated: Sun Sep 10 01:49:23 2017 for target machine '192.168.240.36'
+
+**** Vertex: 'LiveSpikeReceiver'
+Model: LivePacketGather
+Pop size: 1
+Machine Vertices: 
+  Slice 0:0 (1 atoms) 
+
+**** Vertex: 'injector0'
+Model: SpikeInjector
+Pop size: 4
+Machine Vertices: 
+  Slice 0:3 (4 atoms) 
+
+**** Vertex: 'injector1'
+Model: SpikeInjector
+Pop size: 1
+Machine Vertices: 
+  Slice 0:0 (1 atoms) 
+
+**** Vertex: 'readout_neurons'
+Model: IFCurrExp
+Pop size: 59
+Machine Vertices: 
+  Slice 0:0 (1 atoms) 
+  Slice 1:1 (1 atoms) 
+  Slice 2:2 (1 atoms) 
+  Slice 3:3 (1 atoms) 
+  Slice 4:4 (1 atoms) 
+  Slice 5:5 (1 atoms) 
+  Slice 6:6 (1 atoms) 
+  Slice 7:7 (1 atoms) 
+  Slice 8:8 (1 atoms) 
+  Slice 9:9 (1 atoms) 
+  Slice 10:10 (1 atoms) 
+  Slice 11:11 (1 atoms) 
+  Slice 12:12 (1 atoms) 
+  Slice 13:13 (1 atoms) 
+  Slice 14:14 (1 atoms) 
+  Slice 15:15 (1 atoms) 
+  Slice 16:16 (1 atoms) 
+  Slice 17:17 (1 atoms) 
+  Slice 18:18 (1 atoms) 
+  Slice 19:19 (1 atoms) 
+  Slice 20:20 (1 atoms) 
+  Slice 21:21 (1 atoms) 
+  Slice 22:22 (1 atoms) 
+  Slice 23:23 (1 atoms) 
+  Slice 24:24 (1 atoms) 
+  Slice 25:25 (1 atoms) 
+  Slice 26:26 (1 atoms) 
+  Slice 27:27 (1 atoms) 
+  Slice 28:28 (1 atoms) 
+  Slice 29:29 (1 atoms) 
+  Slice 30:30 (1 atoms) 
+  Slice 31:31 (1 atoms) 
+  Slice 32:32 (1 atoms) 
+  Slice 33:33 (1 atoms) 
+  Slice 34:34 (1 atoms) 
+  Slice 35:35 (1 atoms) 
+  Slice 36:36 (1 atoms) 
+  Slice 37:37 (1 atoms) 
+  Slice 38:38 (1 atoms) 
+  Slice 39:39 (1 atoms) 
+  Slice 40:40 (1 atoms) 
+  Slice 41:41 (1 atoms) 
+  Slice 42:42 (1 atoms) 
+  Slice 43:43 (1 atoms) 
+  Slice 44:44 (1 atoms) 
+  Slice 45:45 (1 atoms) 
+  Slice 46:46 (1 atoms) 
+  Slice 47:47 (1 atoms) 
+  Slice 48:48 (1 atoms) 
+  Slice 49:49 (1 atoms) 
+  Slice 50:50 (1 atoms) 
+  Slice 51:51 (1 atoms) 
+  Slice 52:52 (1 atoms) 
+  Slice 53:53 (1 atoms) 
+  Slice 54:54 (1 atoms) 
+  Slice 55:55 (1 atoms) 
+  Slice 56:56 (1 atoms) 
+  Slice 57:57 (1 atoms) 
+  Slice 58:58 (1 atoms) 
+
+**** Vertex: 'readout_neurons'
+Model: IFCurrExp
+Pop size: 2
+Machine Vertices: 
+  Slice 0:0 (1 atoms) 
+  Slice 1:1 (1 atoms) 
+
