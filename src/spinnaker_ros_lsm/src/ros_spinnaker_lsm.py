@@ -6,9 +6,6 @@
 @date 	10.09.2017
 
 
-
-
-
 Credits to Stephan Reith for developing the ROS-SpiNNaker interface
 """
 #
