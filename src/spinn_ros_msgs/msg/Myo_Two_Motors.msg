@@ -1,2 +1,1 @@
-int32 motor1
-int32 motor2
+float32[] motor_commands

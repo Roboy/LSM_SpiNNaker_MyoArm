@@ -204,14 +204,14 @@ def callback(data_input):
     inp_pop.record()
     
     
-    p.run(100)
+    p.run(20)
 
     r_spikes = readout_neurons.getSpikes()
     exc_spikes = exc_cells.getSpikes()
     inh_spikes = inh_cells.getSpikes()
     inp_spikes = inp_pop.getSpikes()
 
-    rospy.loginfo('=====> received joint angle in degree %r', np.shape(r_spikes))
+    rospy.loginfo('=====> shape of r_spikes %r', np.shape(r_spikes))
 
     #====================================================================
     # Compute Readout Spike Rates
@@ -224,6 +224,8 @@ def callback(data_input):
     #====================================================================
     # Publish Readout Rates
     #====================================================================
+
+    # TODO: error handling if r_spikes is empty
     pub = rospy.Publisher('/alpha_readout_rates', Pop_List, queue_size=10)
     alpha_readout_rates = Pop_List
     alpha_readout_rates = alpha_rates
