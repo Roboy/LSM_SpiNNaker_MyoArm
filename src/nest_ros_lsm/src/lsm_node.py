@@ -121,7 +121,7 @@ def callback(data_input):
     # Defining the LSM
     #====================================================================
 
-    n_res=500
+    n_res=2000
     w_exc_b=0.2
     w_inh_b=-0.8
     rout_w_exc=20
