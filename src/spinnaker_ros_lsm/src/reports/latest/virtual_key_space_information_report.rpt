@@ -1,0 +1,143 @@
+Vertex: Inhibitory_Cells:0:49 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+edge:Inhibitory_Cells:0:49:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x0L:0xffffffc0] 
+
+
+Vertex: Excitatory_Cells:200:249 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+edge:Excitatory_Cells:200:249:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x180L:0xffffffc0] 
+
+
+Vertex: Excitatory_Cells:250:299 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+edge:Excitatory_Cells:250:299:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x1c0L:0xffffffc0] 
+
+
+Vertex: Excitatory_Cells:350:399 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+edge:Excitatory_Cells:350:399:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x240L:0xffffffc0] 
+
+
+Vertex: Excitatory_Cells:0:49 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+edge:Excitatory_Cells:0:49:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x80L:0xffffffc0] 
+
+
+Vertex: Excitatory_Cells:150:199 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+edge:Excitatory_Cells:150:199:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x140L:0xffffffc0] 
+
+
+Vertex: Inhibitory_Cells:50:99 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+edge:Inhibitory_Cells:50:99:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x40L:0xffffffc0] 
+
+
+Vertex: expoisson:0:19 
+edge:expoisson:0:19:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+edge:expoisson:0:19:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x280L:0xffffffe0] 
+
+
+Vertex: Excitatory_Cells:300:349 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+edge:Excitatory_Cells:300:349:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x200L:0xffffffc0] 
+
+
+Vertex: Excitatory_Cells:50:99 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+edge:Excitatory_Cells:50:99:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0xc0L:0xffffffc0] 
+
+
+Vertex: Excitatory_Cells:100:149 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:0:49, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:150:199, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:300:349, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:50:99, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:200:249, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:350:399, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:100:149, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Excitatory_Cells:250:299, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Inhibitory_Cells:0:49, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+edge:Excitatory_Cells:100:149:Inhibitory_Cells:50:99, keys_and_masks:[KeyAndMask:0x100L:0xffffffc0] 
+
+
