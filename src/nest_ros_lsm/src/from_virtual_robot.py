@@ -12,6 +12,7 @@ import rospy
 from std_msgs.msg import String
 from spinn_ros_msgs.msg import Myo_Joint_Angle
 from control_msgs.msg import JointTrajectoryControllerState
+from std_msgs.msg import Float32
 import numpy as np
 
 def convert_angle():
@@ -34,9 +35,10 @@ def convert_angle():
     float32 radian
     '''
 
-    rospy.init_node('from_virtual_robot', anonymous=True)
+    rospy.init_node('from_virtual_robot')
 
     rospy.Subscriber("/arm_controller/state", JointTrajectoryControllerState, joint_callback)
+    rospy.Subscriber("/roboy/motor/tendonLength", Float32, tendon_callback) 
     
     rate = rospy.Rate(10) # 10hz
     
@@ -58,6 +60,18 @@ def joint_callback(data):
         
     pub = rospy.Publisher('/roboy/middleware/JointAngle', Myo_Joint_Angle, queue_size=10)
     pub.publish(joint_angle)
+
+def tendon_callback(data_input):
+
+    global message
+    message = data_input.data
+    tendon_length = Myo_Joint_Angle()
+
+    tendon_length.degree = int(message*20)     # decode to degree and center around 0
+    tendon_length.radian = float(tendon_length.degree)/360*2*np.pi        # decode to radian and center around 0
+        
+    pub = rospy.Publisher('/roboy/middleware/JointAngle', Myo_Joint_Angle, queue_size=10)
+    pub.publish(tendon_length)
 
 if __name__ == '__main__':
     try:

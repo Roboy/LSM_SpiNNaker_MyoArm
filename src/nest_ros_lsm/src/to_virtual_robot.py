@@ -27,8 +27,7 @@ def talker():
 
 def transfer_fct(readout_rates):
     # add joint and motor limits
-    # only for show
-    motor_commands = []
+    motor_commands = [0.0,0.0]
     '''
     for rate in readout_rates:
         if rate < 200:
@@ -36,10 +35,10 @@ def transfer_fct(readout_rates):
         else:
             motor_commands.append(2.0)
     '''
-    motor_commands[0]=readout_rates[0]/50
-    if motor_commands[0]>3:
-	motor_commands[0]=3.
-    motor_commands[1]=3.-motor_commands[0]
+    motor_commands[0]=readout_rates[0]/70.
+    if motor_commands[0]>2:
+        motor_commands[0]=2.
+    motor_commands[1]=2. - motor_commands[0]
 
     return motor_commands
 
@@ -54,7 +53,7 @@ def callback(data_input):
     
     
     motor_commands.voltage = transfer_fct(readout_rates)
-    pub = rospy.Publisher('/motor_commands', Myo_Two_Motors, queue_size=10) 
+    pub = rospy.Publisher('/roboy/motor_control', MotorControl, queue_size=10) 
     
     print motor_commands
     pub.publish(motor_commands)

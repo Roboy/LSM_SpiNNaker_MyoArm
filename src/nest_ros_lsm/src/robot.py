@@ -33,7 +33,7 @@ def callback(data_input):
     joint_angle.degree=motors[0]
     
     
-    pub = rospy.Publisher('/joint_angle', Myo_Joint_Angle, queue_size=10) 
+    pub = rospy.Publisher('/roboy/middleware/JointAngle', Myo_Joint_Angle, queue_size=10) 
     
     
     pub.publish(joint_angle)

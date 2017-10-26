@@ -36,10 +36,10 @@ from spinn_ros_msgs.msg import Pop_List
 
 
 def network():
-    rospy.init_node('lsm_node')
+    rospy.init_node('nest_lsm_node')
     rate = rospy.Rate(10) # 10hz
     
-    rospy.Subscriber('joint_angle', Myo_Joint_Angle, callback)
+    rospy.Subscriber('/roboy/middleware/JointAngle', Myo_Joint_Angle, callback)
 
     rospy.loginfo('starting---------------')
     rospy.spin()

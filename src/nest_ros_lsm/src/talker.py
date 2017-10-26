@@ -14,7 +14,7 @@ from spinn_ros_msgs.msg import Myo_Joint_Angle
 
 def talker():
     
-    pub = rospy.Publisher('/joint_angle', Myo_Joint_Angle, queue_size=10)
+    pub = rospy.Publisher('/roboy/middleware/JointAngle', Myo_Joint_Angle, queue_size=10)
     rospy.init_node('talker')
     rate = rospy.Rate(0.2) 
     while not rospy.is_shutdown():

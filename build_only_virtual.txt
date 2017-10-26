@@ -1,0 +1,3 @@
+catkin_make --pkg spinn_ros_msgs nest_ros_lsm roboy_control_learning common_utilities roboy_simulation roboy_controller roboy_models
+
+
