@@ -16,7 +16,11 @@ alt="demo video" width="360" height="270" border="10" /></a>
 Here you can see our LSM-based closed loop system steering a virtual Myorobotic arm. 
 The LSM that we used for this demo video had a reservoir of 2000 spiking neurons. Because the simulation of these is not real-time the robot arm in the simulation moves very slowly. 
 
-For running the same demo on your PC, you have to download this repository and build the ROS workspace by running catkin_make directly in LSM-SpiNNaker_MyoArm
+For running the same demo on your PC, you have to download this repository and delete the common_utilities folder in src. The reason for this is that the virtual and the physical robot currently use different commit versions of this package (will be made generic in the future). A saved version of common_utilities can be found in the root directory in the folder 'buffer' which you will have to add again for working with the physical robot. 
+
+Now build the ROS workspace by running the following directly in LSM-SpiNNaker_MyoArm:
+
+`catkin_make --pkg spinn_ros_msgs nest_ros_lsm roboy_control_learning roboy_simulation roboy_controller roboy_models`
 
 A video showing the control of the physical Myorobotic arm will be added shortly. 
 
