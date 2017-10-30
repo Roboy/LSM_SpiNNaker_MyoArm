@@ -9,7 +9,7 @@ Repository for running a Liquid State Machine on SpiNNaker or optionally on NEST
 
 # Demo Video
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=v=cjA-FDAnFxs
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=cjA-FDAnFxs
 " target="_blank"><img src="http://img.youtube.com/vi/cjA-FDAnFxs/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="360" height="270" border="10" /></a>
 
