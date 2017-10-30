@@ -99,4 +99,5 @@ In *src*:
 |ros_spinnaker_interface | Modified version for connecting ROS and SpiNNaker with multiple output neurons. |
 |spinnaker_ros_lsm | ROS-nodes for running the LSM on SpiNNaker and connect it to ROS and the virtual/physical robot.|
 
+The main packages are **nest_ros_lsm** and **spinnaker_ros_lsm**. 
 
