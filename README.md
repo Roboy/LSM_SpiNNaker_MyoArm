@@ -6,6 +6,7 @@ Repository for running a Liquid State Machine on SpiNNaker or optionally on NEST
 
 ![](https://github.com/Roboy/LSM_SpiNNaker_MyoArm/blob/master/media/interfaces.png "Interfaces")
 
+Our approach allows high flexibility by allowing the user to either run the spiking neural network on her own PC with NEST or (with almost no changes to the network specification) on the dedicated SpiNNaker neuromorphic hardware in biological real-time. The user is also free to decide between the physical Myorobotic arm or a virtual model of it.  
 
 # Demo Video
 
@@ -69,11 +70,12 @@ https://github.com/Erzcoder/spinn_ros_msgs.git
 
 ![](https://github.com/Roboy/LSM_SpiNNaker_MyoArm/blob/master/media/robot_to_lsm.png "Robot to LSM")
 
+The blocks with round edges represent ROS-nodes and the blocks with sharp edges are ROS-topics to which these nodes subscribe or publish messages. 
 
 
 # Connection from the LSM to the Robot
 
 ![](https://github.com/Roboy/LSM_SpiNNaker_MyoArm/blob/master/media/lsm_to_robot.png "LSM to Robot")
 
-
+The blocks with round edges represent ROS-nodes and the blocks with sharp edges are ROS-topics to which these nodes subscribe or publish messages. 
 
