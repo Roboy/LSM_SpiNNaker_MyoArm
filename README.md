@@ -6,4 +6,5 @@ Information for using this repository:
 
 # Structure
 
-![Interfaces](https://github.com/Roboy/LSM_SpiNNaker_MyoArm/media/interfaces.png "Logo Title Text 1")
+![](https://github.com/Roboy/LSM_SpiNNaker_MyoArm/blob/master/media/interfaces.png "Logo Title Text 1")
+
