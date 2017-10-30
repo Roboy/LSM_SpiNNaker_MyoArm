@@ -79,3 +79,24 @@ The blocks with round edges represent ROS-nodes and the blocks with sharp edges 
 
 The blocks with round edges represent ROS-nodes and the blocks with sharp edges are ROS-topics to which these nodes subscribe or publish messages. 
 
+# Explanations of the Sub-Packages
+
+All relevant code can be found in the *src* folder. The *media* folder contains several images and the *Thesis* folder contains saved versions of scripts that were referenced in my thesis. 
+
+In *src*: 
+
+| Package               | Explanation |
+|-----------------------|-------------|
+|roboy_communication| Roboy package for communication with the physical robot. |
+|roboy_plexus | Roboy package for communication with the physical robot.|
+|common_utilities |Roboy package communication with the physical robot. |
+|roboy_rqt_control | Roboy package containing the GUI for controlling the physical robot. |
+|roboy_ros_control | Roboy package for communication with the physical and virtual robot.|
+|roboy_control_learning| For simulating the virtual robot.|
+|spinn_ros_msgs| Adds several custom ROS-messages. | 
+|experimental_code      | Contains scripts for experimenting with the spiking neural network. |
+|nest_ros_lsm| ROS-nodes for running the LSM with the NEST neural simulator and connect it to ROS and the virtual/physical robot. |
+|ros_spinnaker_interface | Modified version for connecting ROS and SpiNNaker with multiple output neurons. |
+|spinnaker_ros_lsm | ROS-nodes for running the LSM on SpiNNaker and connect it to ROS and the virtual/physical robot.|
+
+
