@@ -7,6 +7,15 @@ Repository for running a Liquid State Machine on SpiNNaker or optionally on NEST
 ![](https://github.com/Roboy/LSM_SpiNNaker_MyoArm/blob/master/media/interfaces.png "Logo Title Text 1")
 
 
+# Demo Video
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=v=cjA-FDAnFxs
+" target="_blank"><img src="http://img.youtube.com/vi/cjA-FDAnFxs/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="360" height="270" border="10" /></a>
+
+
+
+
 # Requirements
 
 This project uses several software packages with delicate interdependencies. The sPyNNaker interface between PyNN and the SpiNNaker machine for example only supports PyNN versions 0.7.x, but not the more recent 0.8 or 0.9 releases. For every PyNN version there is furthermore only one NEST version which is supported, newer versions typically aren't. 
