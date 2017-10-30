@@ -5,7 +5,7 @@
 @author Nicolas Berberich
 @date   07.09.2017
 
-ROS node for converting Myo_Two_Motors messages to Roboy MotorCommand messages.
+ROS node for converting Pop_List messages to Roboy MotorControl messages.
 
 '''
 
@@ -28,13 +28,8 @@ def talker():
 def transfer_fct(readout_rates):
     # add joint and motor limits
     motor_commands = [0.0,0.0]
-    '''
-    for rate in readout_rates:
-        if rate < 200:
-            motor_commands.append(rate/100.)
-        else:
-            motor_commands.append(2.0)
-    '''
+   
+    # TODO: this is only a preliminary version for testing the closed loop; needs to be added later
     motor_commands[0]=readout_rates[0]/70.
     if motor_commands[0]>2:
         motor_commands[0]=2.

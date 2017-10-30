@@ -5,7 +5,7 @@
 @author Nicolas Berberich
 @date   07.09.2017
 
-ROS node for converting Myo_Two_Motors messages to Roboy MotorCommand messages.
+ROS node for converting Myo_Two_Motors messages to Roboy MotorControl messages.
 
 '''
 
@@ -29,13 +29,8 @@ def transfer_fct(readout_rates):
     # add joint and motor limits
     # only for show
     motor_commands = []
-    '''
-    for rate in readout_rates:
-        if rate < 200:
-            motor_commands.append(rate/100.)
-        else:
-            motor_commands.append(2.0)
-    '''
+
+    # TODO: placeholder only; needs to be improved
     motor_commands[0]=readout_rates[0]/50
     if motor_commands[0]>3:
 	motor_commands[0]=3.

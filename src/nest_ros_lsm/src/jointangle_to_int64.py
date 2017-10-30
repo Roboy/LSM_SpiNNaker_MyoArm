@@ -4,7 +4,7 @@
 @author	Nicolas Berberich
 @date	07.09.2017
 
-ROS node for converting joint sensor encoder values to degrees and radians.
+ROS node for converting the Joint_Angle ROS-message degree data field to a 64-bit integer that can be sent to SpiNNaker. 
 '''
 
 
@@ -40,7 +40,7 @@ def convert_angle():
 
 def joint_callback(data):
     '''
-    Converts the received encoder value from the joint sensor into degrees and radians and publishes it as a Joint_Angle message
+    Converts the received joint angle value (in degree) into an Int64 message
     '''
 
     int_value = Int64()

@@ -43,10 +43,12 @@ def network():
 
     rospy.loginfo('starting---------------')
     rospy.spin()
-    #while True:
-    #    rospy.loginfo_throttle(10, "This message will print every 10 seconds")
+
 
 def mean_decoding(spikes, dt):
+    '''
+    Method for computing the mean spike rates 
+    '''
 
     n_neurons= int(spikes[:,0].max())+1
 
@@ -66,9 +68,11 @@ def mean_decoding(spikes, dt):
 
 
 def alpha_decoding(spikes,dt):
-    # compute instantaneous spike rate at last spike
-
-    f = lambda x: x*0.3*np.exp(2-x*0.3)
+    '''
+    Method for computing the instantaneous spike rate at last spike
+    '''
+    alpha = 0.3                                 # different values of alpha can be tested; they define the width of the convolution filter
+    f = lambda x: x*alpha*np.exp(2-x*alpha) 
     n_neurons= int(spikes[:,0].max())+1
 
     spiketrains = []
@@ -84,9 +88,9 @@ def alpha_decoding(spikes,dt):
 
     for i, spiketrain in enumerate(spiketrains):
 	for spike in spiketrain:
-            # weight spike based on time
-	    alpha_rates[i]+=f(last_spike-spike)
-	# TODO: add scaling factor
+        
+	    alpha_rates[i]+=f(last_spike-spike)        # weighting the spikes based on their time of occurence
+	# TODO: add scaling factor (so that the resulting values are in Hz)
 	#scaling_factor = 1/np.sum(alpha_kernel)*1/dt
     
     return alpha_rates
@@ -130,7 +134,7 @@ def callback(data_input):
     n_readout_neurons   = 2
     n_reservoir_neurons = n_res
     n_res = n_reservoir_neurons
-    exc_rate            = 0.8 # % of excitatory neurons in reservoir
+    exc_rate            = 0.8 # percentage of excitatory neurons in reservoir
 
     n_exc = int(round(n_reservoir_neurons*exc_rate))
     n_inh = n_reservoir_neurons-n_exc

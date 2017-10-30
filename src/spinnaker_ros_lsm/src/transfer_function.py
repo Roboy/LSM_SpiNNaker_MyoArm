@@ -2,9 +2,9 @@
 # license removed for brevity
 
 '''
-This is the implementation of a simple ROS-node which publishes Joint_Angle messages. 
-
 Purpose: testing
+
+The real transfer_function is integrated in the to_physical_robot.py and to_virtual_robot.py scripts. 
 '''
 
 import rospy

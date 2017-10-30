@@ -1,5 +1,9 @@
 # coding: utf-8
 """
+Just for testing if the connection to the SpiNNaker machine is working. 
+
+
+
 An implementation of benchmarks 1 and 2 from
 
     Brette et al. (2007) Journal of Computational Neuroscience 23: 349-398

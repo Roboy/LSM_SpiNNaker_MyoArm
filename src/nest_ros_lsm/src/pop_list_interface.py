@@ -4,7 +4,7 @@
 @author	Nicolas Berberich
 @date	07.09.2017
 
-ROS node that publishes the received Pop_List to a uniform topic
+ROS node that publishes the received Pop_List to a uniform topic /readout_rates.
 '''
 
 
@@ -15,17 +15,15 @@ import numpy as np
 def change_topic():
 
     '''
-    #topic: /to_spinnaker
-    #msg: std_msgs/int64
-    int64 data
-    '''    
 
-    '''
-    #topic: /roboy/middleware/JointAngle
-    #msg: spinn_ros_msgs/Joint_Angle
-    int32 encoder
-    int32 degree
-    float32 radian
+    Subscribes to: 
+        - Topic: /alpha_readout_rates   Message-type: Pop_List
+        - Topic: /mean_readout_rates    Message-type: Pop_List
+        - Topic: /from_spinnaker        Message-type: Pop_List
+
+    
+    Publishes to:
+        - Topic: /readout_rates         Message-type: Pop_List
     '''
 
     rospy.init_node('pop_list_interface')

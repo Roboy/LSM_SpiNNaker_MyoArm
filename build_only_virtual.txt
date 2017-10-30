@@ -1,3 +1,4 @@
 catkin_make --pkg spinn_ros_msgs nest_ros_lsm roboy_control_learning common_utilities roboy_simulation roboy_controller roboy_models
 
+delete the common_utilities package in src, because a different commit is being used in roboy_simulation
 

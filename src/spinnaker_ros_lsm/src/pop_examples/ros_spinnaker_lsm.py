@@ -68,7 +68,7 @@ input_interface = ROS_Spinnaker_Interface(
         n_neurons_source=n_input_neurons,           
         Spike_Source_Class=SpikeSourcePoisson,      
                                                     
-        ros_topic_send='to_spinnaker',       # msg-type: std_msgs/Int64       
+        ros_topic_send='to_spinnaker',              
        
         clk_rate=1000,                              
         ros_output_rate=10)                         
@@ -77,7 +77,7 @@ input_interface = ROS_Spinnaker_Interface(
 output_interface = ROS_Spinnaker_Interface(
         Spike_Sink_Class=SpikeSinkMultipleReadoutsConvolution,    
                                                     
-        ros_topic_recv='from_spinnaker',      # msg-type: spinn_ros_msgs/Pop_List      
+        ros_topic_recv='from_spinnaker',            
                                     
         output_population=readout_neurons,
         clk_rate=1000,                              

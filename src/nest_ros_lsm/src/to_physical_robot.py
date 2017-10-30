@@ -5,7 +5,7 @@
 @author Nicolas Berberich
 @date   07.09.2017
 
-ROS node for converting Myo_Two_Motors messages to Roboy MotorCommand messages.
+ROS node for converting Pop_List messages to Roboy MotorCommand messages.
 
 '''
 
